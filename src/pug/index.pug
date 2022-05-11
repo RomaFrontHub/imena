@@ -1,0 +1,57 @@
+doctype html
+html(lang='en')
+    include includes/head
+    body
+        .all
+            include includes/header
+
+            //Adaptive
+            section.adaptive
+                .adaptive__all
+                    .adaptive__nav
+                        ul
+                            li
+                                a(href="#")
+                                    span О нас
+                                    img(src="img/arrow.svg", alt="arrow")
+                            li
+                                a(href="#") Коворкинги
+                            li
+                                a(href="#") Франшиза
+                            li
+                                a(href="#") Обучение
+                            li
+                                a(href="#") Блог
+                            li
+                                a(href="#") Контакты
+
+                    .adaptive__search
+                        .search__hr
+                        a(href="#").search__text Найти мастера или коворкинг
+
+            
+            //Promo
+            section.promo
+                .promo-all
+                    .promo-all__subtitle
+                        a(href="#") Главная
+                        span /
+                        a(href="#")  вход в Кабинет Мастера
+                    .promo-all__title Вход в кабинет мастера
+                    form.promo-all__form
+                        input(type="tel", placeholder="Телефон *")
+                        input(type="email", placeholder="Email *")
+                        .pass
+                            .pass__rem
+                                input(type="checkbox", checked)
+                                span ЗАПОМНИТЬ МЕНЯ
+                            .pass__forg
+                                a(href="#") Забыли пароль?
+                        .text Для регистрации вам необходимо выбрать коворкинг и отправить запрос через <a href="#">форму на сайте</a>. 
+                        a(href="#").promo__button
+                            span войти
+                            .ver-hr
+
+            include includes/footer
+
+        include includes/scripts
